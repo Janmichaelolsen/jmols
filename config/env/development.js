@@ -1,9 +1,9 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/jmols-dev',
+	db: 'mongodb://jamma:h3e3l9i77@ds061631.mongolab.com:61631/heroku_app35909399',
 	app: {
-		title: 'jmols - Development Environment'
+		title: 'jmols'
 	},
 	facebook: {
 		clientID: process.env.FACEBOOK_ID || 'APP_ID',

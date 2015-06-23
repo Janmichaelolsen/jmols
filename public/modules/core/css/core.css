@@ -1,15 +1,36 @@
 .content {
-	margin-top: 50px;
+  margin-bottom:50px;
+  font-family: 'Raleway', sans-serif;
 }
-.undecorated-link:hover {
-	text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 200;
 }
-[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
-	display: none !important;
+p {
+  font-weight: 400;
 }
-.ng-invalid.ng-dirty {
-	border-color: #FA787E;
+.row {
+  text-align:center;
 }
-.ng-valid.ng-dirty {
-	border-color: #78FA89;
+
+#header {
+  background-image: url('/modules/core/img/gjevil.png');
+  background-size:cover;
+  margin-right:0px!important;
+  margin-left:0px!important;
+  font-family: 'Raleway', sans-serif;
+}
+.navbar {
+   background: rgba(0,0,0,0.4);
+}
+
+.navbar .sticky{
+   background: rgba(0,0,0,0.6);
+}
+.navbar-default .navbar-nav > li > a {
+  color:white!important;
 }
