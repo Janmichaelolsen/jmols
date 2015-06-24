@@ -1,7 +1,7 @@
 {
 	"name": "jmols",
 	"version": "0.0.1",
-	"description": "Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js",
+	"description": "A Professional Nerd",
 	"dependencies": {
 		"bootstrap": "~3",
 		"angular": "~1.2",
