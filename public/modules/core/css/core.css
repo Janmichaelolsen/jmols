@@ -1,5 +1,6 @@
 .content {
   margin-bottom:50px;
+  margin-top:70px;
   font-family: 'Raleway', sans-serif;
 }
 h1,
@@ -24,6 +25,29 @@ p {
   margin-left:0px!important;
   font-family: 'Raleway', sans-serif;
 }
+
+@media (min-width:1200px){
+  .headercontent {
+    margin-bottom: -50px!important;
+  }
+}
+
+@media (max-width:1200px){
+  #profile {
+    display:none;
+  }
+  .headercontent{
+    margin-top: 70px!important;
+    text-align:center!important;
+  }
+  .navbar {
+     background: rgba(0,0,0,0.7)!important;
+  }
+  .content {
+    margin-top:20px;
+  }
+}
+
 .navbar {
    background: rgba(0,0,0,0.4);
 }

@@ -35,7 +35,7 @@
 	<link href="/modules/core/img/brand/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,100' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+	<link rel='stylesheet' href='/bower_components/textAngular/dist/textAngular.css'>
 	<!--Application CSS Files-->
 	{% for cssFile in cssFiles %}<link rel="stylesheet" href="{{cssFile}}">{% endfor %}
 
@@ -46,15 +46,15 @@
 </head>
 
 <body class="ng-cloak">
-	<div data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-default">></div>
+	<div data-ng-include="'/modules/core/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-default"></div>
 	<div class="row" id="header">
-			<div class="col-lg-12" style="margin-top:50px; margin-bottom:50px;">
-					<img src="/modules/core/img/profile.png" alt="" style="margin-top:50px;">
-					<div class="intro-text">
-							<h1 style="color:white;">Jan Michael Olsen</h1>
-							<h2 style="color:white;">App-utvikler for web og mobil </h2>
-					</div>
-			</div>
+				<div id="profile" class="col-lg-4 headercontent" style="text-align:right;">
+					<img src="/modules/core/img/profile.png" alt="" style="margin-top:60px;">
+				</div>
+				<div class="col-lg-4 headercontent" style="margin-top:170px; text-align:left;">
+					<h1 style="color:white;">Jan Michael Olsen</h1>
+					<h2 style="color:white;">Web- og mobilutvikler</h2>
+				</div>
 	</div>
 	<section class="content">
 			{% block content %}{% endblock %}
@@ -74,23 +74,9 @@
 	<script type="text/javascript" src="http://{{request.hostname}}:35729/livereload.js"></script>
 	{% endif %}
 	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script>
-	$("#home").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contentHome").offset().top
-    }, 2000);
-});
-$("#cv").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contentCV").offset().top
-    }, 2000);
-});
-$("#blog").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#contentBlog").offset().top
-    }, 2000);
-});
-	</script>
+	<script src='/bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
+	<script src='/bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
+	<script src='/bower_components/textAngular/dist/textAngular.min.js'></script>
 </body>
 
 </html>

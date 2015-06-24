@@ -16,6 +16,10 @@ angular.module('users').config(['$stateProvider',
 		state('signin', {
 			url: '/signin',
 			templateUrl: 'modules/users/views/authentication/signin.client.view.html'
-		});
+		})/*.
+		state('signup', {
+			url: '/signup',
+			templateUrl: 'modules/users/views/authentication/signup.client.view.html'
+		})*/;
 	}
 ]);
