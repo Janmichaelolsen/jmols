@@ -73,10 +73,15 @@
 	<!--Livereload script rendered -->
 	<script type="text/javascript" src="http://{{request.hostname}}:35729/livereload.js"></script>
 	{% endif %}
-	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script src='/bower_components/textAngular/dist/textAngular-rangy.min.js'></script>
-	<script src='/bower_components/textAngular/dist/textAngular-sanitize.min.js'></script>
-	<script src='/bower_components/textAngular/dist/textAngular.min.js'></script>
+	<script>
+	$(window).scroll(function() {
+	  if ($(document).scrollTop() > 50) {
+	    $(".navbar").addClass("shrink");
+	  } else {
+	    $(".navbar").removeClass("shrink");
+	  }
+	});
+	</script>
 </body>
 
 </html>

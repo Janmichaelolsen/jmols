@@ -49,7 +49,8 @@ p {
 }
 
 .navbar {
-   background: rgba(0,0,0,0.4);
+  background:transparent;
+  border-color:transparent;
 }
 
 .navbar .sticky{
@@ -57,4 +58,8 @@ p {
 }
 .navbar-default .navbar-nav > li > a {
   color:white!important;
+}
+
+.shrink {
+  background: rgba(0,0,0,0.5);
 }
