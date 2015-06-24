@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://jamma:h3e3l9i77@ds061631.mongolab.com:61631/heroku_app35909399',
+	db: 'mongodb://admin:h3e3l9i77@ds061188.mongolab.com:61188/heroku_f45lx9vn',
 	app: {
 		title: 'jmols'
 	},
