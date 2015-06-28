@@ -46,6 +46,9 @@ p {
   .content {
     margin-top:20px;
   }
+  .personalia {
+    text-align:left!important;
+  }
 }
 
 .navbar {
