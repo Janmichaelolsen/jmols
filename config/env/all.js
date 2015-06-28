@@ -14,6 +14,7 @@ module.exports = {
 		lib: {
 			css: [
 				'public/lib/bootstrap/dist/css/bootstrap.css',
+				'public/lib/textAngular/dist/textAngular.css'
 			],
 			js: [
 				'public/lib/angular/angular.js',
@@ -25,7 +26,11 @@ module.exports = {
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
-				'public/lib/jquery/dist/jquery.min.js'
+				'public/lib/jquery/dist/jquery.min.js',
+				'public/lib/rangy/rangy-core.js',
+				'public/lib/rangy/rangy-selectionsaverestore.js',
+				'public/lib/textAngular/dist/textAngularSetup.js',
+				'public/lib/textAngular/dist/textAngular.js'
 			]
 		},
 		css: [

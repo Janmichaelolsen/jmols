@@ -15,10 +15,6 @@ angular.module('core').config(['$stateProvider', '$urlRouterProvider',
 		.state('cv', {
 			url: '/cv',
 			templateUrl: 'modules/core/views/cv.client.view.html'
-		})
-		.state('blog', {
-			url: '/blog',
-			templateUrl: 'modules/core/views/blog.client.view.html'
 		});
 	}
 ]);
